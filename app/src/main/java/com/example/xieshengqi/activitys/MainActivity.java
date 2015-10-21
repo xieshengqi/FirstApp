@@ -1,24 +1,28 @@
-package com.example.xieshengqi.myapplication;
+package com.example.xieshengqi.activitys;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
+import android.view.View;
 import android.widget.ImageView;
 
+import com.example.xieshengqi.myapplication.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String str = "http://a3.qpic.cn/psb?/V14OaNCr3Gl6oy/iPBzyqfZX22o8*0LAVQTIzgm.1dWR1OVRWqbmDVXxQA!/b/dHYBAAAAAAAA&ek=1&kp=1&pt=0&bo=gAJxBAAAAAAFANQ!&sce=50-1-1&rf=4-0";
-        ImageView image = (ImageView) findViewById(R.id.imageView);
-        ImageLoader.getInstance().displayImage(str,image);
+//        String str = "http://a3.qpic.cn/psb?/V14OaNCr3Gl6oy/iPBzyqfZX22o8*0LAVQTIzgm.1dWR1OVRWqbmDVXxQA!/b/dHYBAAAAAAAA&ek=1&kp=1&pt=0&bo=gAJxBAAAAAAFANQ!&sce=50-1-1&rf=4-0";
+//        ImageView image = (ImageView) findViewById(R.id.imageView);
+//        ImageLoader.getInstance().displayImage(str,image);
+        findViewById(R.id.button).setOnClickListener(this);
     }
 
     @Override
@@ -41,5 +45,15 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button:
+                Intent intent = new Intent(MainActivity.this, DrawlayoutActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }
