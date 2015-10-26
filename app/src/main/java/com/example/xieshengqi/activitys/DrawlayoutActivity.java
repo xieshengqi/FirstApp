@@ -25,6 +25,7 @@ public class DrawlayoutActivity extends FragmentActivity
         setContentView(R.layout.layout);
         initView();
         initEvents();
+
         findViewById(R.id.drawable_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +39,11 @@ public class DrawlayoutActivity extends FragmentActivity
         mDrawerLayout.openDrawer(Gravity.RIGHT);
         mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED,Gravity.RIGHT);
 
+    }
+
+
+    private void initMyView(){
+        //测试一下git
     }
     private void initEvents(){
 
@@ -70,6 +76,7 @@ public class DrawlayoutActivity extends FragmentActivity
                     mContent.invalidate();
                     ViewHelper.setScaleX(mContent, rightScale);
                     ViewHelper.setScaleY(mContent, rightScale);
+
                 }
             }
 
