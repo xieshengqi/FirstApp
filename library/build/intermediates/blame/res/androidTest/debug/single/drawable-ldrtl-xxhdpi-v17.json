@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/xieshengqi/AndroidStudioProjects/FirstApp/library/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/xieshengqi/.android/build-cache/76579cbcc171d124939334dcd57384042a91ac75/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/xieshengqi/AndroidStudioProjects/FirstApp/library/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/xieshengqi/.android/build-cache/76579cbcc171d124939334dcd57384042a91ac75/output/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/xieshengqi/AndroidStudioProjects/FirstApp/library/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/xieshengqi/.android/build-cache/76579cbcc171d124939334dcd57384042a91ac75/output/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    }
+]

@@ -1,10 +1,7 @@
 package com.example.xieshengqi.activitys;
 
-import android.app.Activity;
 import android.content.Context;
-import android.media.MediaCodecList;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +23,6 @@ public class ListViewActivity extends ActionBarActivity {
     ListView mlistView;
     Context context;
     ImageLoader imageLoader;
-
 
 
     @Override
@@ -63,8 +59,8 @@ public class ListViewActivity extends ActionBarActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder viewHolder = null;
             if (convertView == null) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.adapter_itemlayout, null);
                 viewHolder = new ViewHolder();
+                convertView = LayoutInflater.from(context).inflate(R.layout.adapter_itemlayout, null);
                 viewHolder.textView = (TextView) convertView.findViewById(R.id.textView2);
                 viewHolder.imageView = (ImageView) convertView.findViewById(R.id.imageView2);
                 convertView.setTag(viewHolder);
@@ -76,6 +72,7 @@ public class ListViewActivity extends ActionBarActivity {
             imageLoader.displayImage(str, viewHolder.imageView, OptionUtils.getOption());
             return convertView;
         }
+
         class ViewHolder {
             TextView textView;
             ImageView imageView;

@@ -5,16 +5,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nihaoa"
+        android:text="小控件"
         android:id="@+id/textView"
-        android:layout_below="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true" />
 
 
@@ -30,10 +29,83 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
+        android:text="仿qq侧滑"
+        android:id="@+id/cehuan_btn"
+        android:layout_below="@+id/swipe_btn"
+        android:layout_alignRight="@+id/swipe_btn"
+        android:layout_alignEnd="@+id/swipe_btn"
+        android:layout_alignLeft="@+id/swipe_btn"
+        android:layout_alignStart="@+id/swipe_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="流式布局"
+        android:id="@+id/flowlayout_btn"
         android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android自带刷新"
+        android:id="@+id/swipe_btn"
+        android:layout_below="@+id/flowlayout_btn"
+        android:layout_alignLeft="@+id/flowlayout_btn"
+        android:layout_alignStart="@+id/flowlayout_btn"
+        android:layout_alignRight="@+id/flowlayout_btn"
+        android:layout_alignEnd="@+id/flowlayout_btn" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android第三方下拉刷新"
+        android:id="@+id/pullrefreshView_btn"
+        android:layout_below="@+id/cehuan_btn"
+        android:layout_alignLeft="@+id/cehuan_btn"
+        android:layout_alignStart="@+id/cehuan_btn"
+        android:layout_alignRight="@+id/cehuan_btn"
+        android:layout_alignEnd="@+id/cehuan_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="百分比布局"
+        android:id="@+id/percentframelayout_btn"
+        android:layout_below="@+id/pullrefreshView_btn"
+        android:layout_alignLeft="@+id/pullrefreshView_btn"
+        android:layout_alignStart="@+id/pullrefreshView_btn"
+        android:layout_alignRight="@+id/pullrefreshView_btn"
+        android:layout_alignEnd="@+id/pullrefreshView_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tablayout"
+        android:id="@+id/tablayout_btn"
+        android:layout_below="@+id/percentframelayout_btn"
+        android:layout_alignLeft="@+id/percentframelayout_btn"
+        android:layout_alignStart="@+id/percentframelayout_btn"
+        android:layout_alignRight="@+id/percentframelayout_btn"
+        android:layout_alignEnd="@+id/percentframelayout_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post_btn"
+        android:id="@+id/post_btn"
+        android:layout_below="@+id/tablayout_btn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片查看器"
+        android:id="@+id/imagecheck_btn"
+        android:layout_below="@+id/post_btn"
+        android:layout_alignLeft="@+id/post_btn"
+        android:layout_alignStart="@+id/post_btn" />
 
 </RelativeLayout>

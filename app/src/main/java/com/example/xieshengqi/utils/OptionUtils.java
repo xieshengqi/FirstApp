@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import com.example.xieshengqi.myapplication.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 
+
 /**
  * Created by xieshengqi on 15/10/21.
  */
